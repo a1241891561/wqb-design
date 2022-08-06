@@ -4,7 +4,12 @@ import Button, { ButtonSize, ButtonType } from "./components/Button";
 // import "antd/dist/antd.css";
 import "./App.css";
 function App() {
-  return <Button>111</Button>;
+  return <div>
+  <Button className='custom' size={ButtonSize.Large} onClick={() => {
+    alert('1')
+  }}>222</Button>
+  <Button btnType={ButtonType.Link} href="http://www.baidu.com" target='_blank'>2</Button>
+  </div> 
 }
 
 export default App;
