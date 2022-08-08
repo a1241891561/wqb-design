@@ -1,5 +1,5 @@
 import React, { useEffect, useState, useRef } from "react";
-import Button, { ButtonSize, ButtonType } from "./components/Button";
+import Button, { ButtonSize, ButtonType } from "./components/Button/Button";
 // import { Select } from "antd";
 // import "antd/dist/antd.css";
 import "./App.css";
