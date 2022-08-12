@@ -1,0 +1,76 @@
+.alert {
+  width: 100%;
+  padding: $btn-padding-y-lg $btn-padding-x-lg;
+  border-radius: $border-radius;
+  color: $white;
+}
+
+.alert-default {
+  background-color: $info;
+}
+.alert-primary {
+  background-color: $primary;
+}
+
+.alert-danger {
+  background-color: $danger;
+}
+.alert-warning {
+  background-color: $warning;
+}
+.title {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+  .message {
+    flex: 1;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    & > * {
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
+  }
+
+  .close {
+    flex-shrink: 0;
+    cursor: pointer;
+    display: block;
+    position: relative;
+    width: $font-size-base;
+    height: $font-size-base;
+  }
+
+  .close::before,
+  .close::after {
+    position: absolute;
+    content: " ";
+    background-color: $white;
+    left: $font-size-base / 2;
+    width: 2px;
+    height: $font-size-base;
+  }
+
+  .close::before {
+    transform: rotate(45deg);
+  }
+
+  .close::after {
+    transform: rotate(-45deg);
+  }
+}
+.big-title {
+  font-size: $font-size-lg;
+}
+.description {
+  word-wrap: break-word;
+  word-break: break-all;
+  > * {
+    word-wrap: break-word;
+    word-break: break-all;
+  }
+}
